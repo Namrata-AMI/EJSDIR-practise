@@ -1,15 +1,12 @@
-<html>
-    <head>
-    <link rel="stylesheet" href="/style.css">        
-    </head>
-    <%- includes(Includes/head.ejs") %>
+
+    <%- include("Includes/head.ejs") %>
     <body>
         <h2> this page belongs to <%= data.name %></h2>
         <button> follow</button>
         <button>message</button>
         <h3> accounts that you follow:
             <p>
-                followers: <%= data.followers %> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; %>
+                followers: <%= data.followers %> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
                 
                 followings : <% data.following %>
              </p>
@@ -25,8 +22,9 @@
    </p>
 
    <% } %>
-   <script src="app.js"></script>
+   <script src="/js/app.js"></script>
     </body>
+   
 
 </html>
 
